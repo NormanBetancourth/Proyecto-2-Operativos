@@ -1,3 +1,4 @@
+from unittest import result
 from flask import Flask
 from flask import request
 
@@ -12,34 +13,43 @@ traducciones = {
     'libro':'book',
     }
 
-
-def thread_fuc(headers, palabra):
-    mutex.acquire()
-    try:
-        print(palabra)
-        print(headers)
-        respuesta = traducciones[palabra]
-        print('respuesta: '+respuesta)
-    finally:
-        mutex.release()
-
-    return respuesta
-    
-
 mutex = Lock()
+
+def thread_fuc(headers, palabra, rs):
+    
+    mutex.acquire()
+    print('entra al th')
+    print(palabra)
+    print(headers)
+    result = traducciones[palabra]
+    mutex.release()
+
 
 app = Flask(__name__)
 
 @app.route('/traductor')
 def get():
-    
+    global result
+    result = 'aa'
+    #Tenemos un problema, no se retornan las traducciones
+
+
     print(request)
-    x = threading.Thread(target=thread_fuc, args=(request.headers, request.args.get('palabra')[1:],))
-    x.start()
+    x = threading.Thread(target=thread_fuc, args=(request.headers, request.args.get('palabra')[1:],result,))
+
+    print('antes de iniciar el th')
     
-    #TODO: arbir el hilo, una vez creado agregamos al log y retornamos la respuesta
-    # return request.args.get('palabra')
+    
+    x.start()
+    x.join()
+    
+    print('cuando acaba el th')
     return traducciones[request.args.get('palabra')[1:]]
+    
+
+    # return result
+    
+    
 
 
 
