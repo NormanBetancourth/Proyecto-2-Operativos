@@ -14,10 +14,10 @@ traducciones = {
 mutex = Lock()
 logging.basicConfig(filename='file.log', format='%(asctime)s - %(message)s', level=logging.INFO)
 
+
 def saveLog(headers, palabra):  
-    mutex.acquire()
-    logging.info(f"{headers}\n Palabra:{palabra}") 
-    mutex.release()
+    logging.info(f"Palabra:{palabra}") 
+    
 
 
 app = Flask(__name__)
@@ -30,7 +30,10 @@ def get():
     except:
       result = 'not found'
 
+    mutex.acquire()
     saveLog(request.headers, request.args.get('palabra')[1:])
+    mutex.release()
+    
     
     return result
     
