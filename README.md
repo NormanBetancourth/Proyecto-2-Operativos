@@ -10,11 +10,11 @@ Unicamente debes correr el comando `pip install -r requirements.txt` y se instal
 
 ## Uso
 1) Correr el archivo `server/server.py` (servidor)
-2) Correrel archivo `client/main.py`    (cliente)
+2) Correr el archivo `client/main.py`    (cliente)
 3) El cliente le solicitará una palabra para traducir, usted la introduce **
-4) Si la palabra fue encontrada, se retornará la trasduccion al ingles
+4) Si la palabra fue encontrada, se retornará la traduccion al ingles
 
-** las palabras disponibles son:
+** las palabras disponibles son: <br />
     'carro':'car', <br />
     'casa':'house', <br />
     'caballo':'horse',  <br />
