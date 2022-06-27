@@ -1,0 +1,29 @@
+2022-06-26 18:40:14,600 -  * Running on http://localhost:5000 (Press CTRL+C to quit)
+2022-06-26 18:40:20,158 - Host: localhost:5000
+User-Agent: python-requests/2.28.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+
+
+ Palabra:carro
+2022-06-26 18:40:20,158 - 127.0.0.1 - - [26/Jun/2022 18:40:20] "GET /traductor?palabra=$carro HTTP/1.1" 200 -
+2022-06-26 18:41:12,597 -  * Running on http://localhost:5000 (Press CTRL+C to quit)
+2022-06-26 18:41:20,903 - Host: localhost:5000
+User-Agent: python-requests/2.28.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+
+
+ Palabra:silla
+2022-06-26 18:41:20,904 - 127.0.0.1 - - [26/Jun/2022 18:41:20] "GET /traductor?palabra=$silla HTTP/1.1" 200 -
+2022-06-26 18:41:27,619 - Host: localhost:5000
+User-Agent: python-requests/2.28.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+
+
+ Palabra:libro
+2022-06-26 18:41:27,619 - 127.0.0.1 - - [26/Jun/2022 18:41:27] "GET /traductor?palabra=$libro HTTP/1.1" 200 -

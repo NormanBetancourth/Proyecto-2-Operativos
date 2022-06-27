@@ -1,9 +1,7 @@
-from unittest import result
 from flask import Flask
 from flask import request
-
-import threading
-from threading import Thread, Lock
+from threading import  Lock
+import logging 
 
 traducciones = {
     'carro':'car',
@@ -14,14 +12,11 @@ traducciones = {
     }
 
 mutex = Lock()
+logging.basicConfig(filename='file.log', format='%(asctime)s - %(message)s', level=logging.INFO)
 
-def thread_fuc(headers, palabra, rs):
-    
+def saveLog(headers, palabra):  
     mutex.acquire()
-    print('entra al th')
-    print(palabra)
-    print(headers)
-    result = traducciones[palabra]
+    logging.info(f"{headers}\n Palabra:{palabra}") 
     mutex.release()
 
 
@@ -29,25 +24,16 @@ app = Flask(__name__)
 
 @app.route('/traductor')
 def get():
-    global result
-    result = 'aa'
-    #Tenemos un problema, no se retornan las traducciones
+    result = 'not found'
+    try:
+      result = traducciones[request.args.get('palabra')[1:]]
+    except:
+      result = 'not found'
 
-
-    print(request)
-    x = threading.Thread(target=thread_fuc, args=(request.headers, request.args.get('palabra')[1:],result,))
-
-    print('antes de iniciar el th')
+    saveLog(request.headers, request.args.get('palabra')[1:])
     
+    return result
     
-    x.start()
-    x.join()
-    
-    print('cuando acaba el th')
-    return traducciones[request.args.get('palabra')[1:]]
-    
-
-    # return result
     
     
 
