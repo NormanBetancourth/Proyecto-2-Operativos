@@ -4,14 +4,6 @@ from threading import  Lock
 from googletrans import Translator
 import logging 
 
-# traducciones = {
-#     'carro':'car',
-#     'casa':'house',
-#     'caballo':'horse',
-#     'silla':'chair',
-#     'libro':'book',
-#     }
-
 translator = Translator()
 
 mutex = Lock()
@@ -49,4 +41,5 @@ def get():
 
 
 
-app.run(host='localhost', port=5000)
+app.run(host='0.0.0.0')
+
