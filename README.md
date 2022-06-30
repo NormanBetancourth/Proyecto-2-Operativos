@@ -6,7 +6,7 @@ Tarea Programada #2 EIF212 – Sistemas Operativos
 -> Hector Mendez <br />
 
 ## Instalación
-Se deben de correr los comandos  `pip install -r requirements.txt` y  ' pip install googletrans==4.0.0rc1 ' y 
+Se deben de correr los comandos  `pip install -r requirements.txt` y  `pip install googletrans==4.0.0rc1` y 
 se instalaran las dependencias necesarias para el correcto funcionamiento de este
 
 ##Descripcion
