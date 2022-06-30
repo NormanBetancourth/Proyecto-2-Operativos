@@ -1,0 +1,173 @@
+2022-06-29 17:26:09,385 -  * Running on http://localhost:5000 (Press CTRL+C to quit)
+2022-06-29 17:27:18,892 - Palabra:hola
+2022-06-29 17:27:18,893 - 127.0.0.1 - - [29/Jun/2022 17:27:18] "GET /traductor?palabra=$hola HTTP/1.1" 200 -
+2022-06-29 17:27:29,983 - Palabra:carro
+2022-06-29 17:27:29,984 - 127.0.0.1 - - [29/Jun/2022 17:27:29] "GET /traductor?palabra=$carro HTTP/1.1" 200 -
+2022-06-29 17:27:44,910 - Palabra:casa
+2022-06-29 17:27:44,910 - 127.0.0.1 - - [29/Jun/2022 17:27:44] "GET /traductor?palabra=$casa HTTP/1.1" 200 -
+2022-06-29 17:28:25,234 - Palabra:a
+2022-06-29 17:28:25,235 - 127.0.0.1 - - [29/Jun/2022 17:28:25] "GET /traductor?palabra=$a HTTP/1.1" 200 -
+2022-06-29 17:28:52,418 - Palabra:a
+2022-06-29 17:28:52,418 - 127.0.0.1 - - [29/Jun/2022 17:28:52] "GET /traductor?palabra=$a HTTP/1.1" 200 -
+2022-06-29 17:29:18,459 - Palabra:a
+2022-06-29 17:29:18,460 - 127.0.0.1 - - [29/Jun/2022 17:29:18] "GET /traductor?palabra=$a HTTP/1.1" 200 -
+2022-06-29 18:15:04,474 -  * Running on http://localhost:5000 (Press CTRL+C to quit)
+2022-06-29 18:15:20,274 - Palabra:carro
+2022-06-29 18:15:20,274 - 127.0.0.1 - - [29/Jun/2022 18:15:20] "GET /traductor?palabra=$carro HTTP/1.1" 200 -
+2022-06-29 18:16:27,130 -  * Running on http://localhost:5000 (Press CTRL+C to quit)
+2022-06-29 18:16:36,087 - Palabra:hola
+2022-06-29 18:16:36,087 - Exception on /traductor [GET]
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Dell\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 1526, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Dell\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 1545, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Dell\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 1734, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a Translated.
+2022-06-29 18:16:36,091 - 127.0.0.1 - - [29/Jun/2022 18:16:36] "[35m[1mGET /traductor?palabra=$hola HTTP/1.1[0m" 500 -
+2022-06-29 18:17:06,872 -  * Running on http://localhost:5000 (Press CTRL+C to quit)
+2022-06-29 18:17:26,268 - Palabra:hola
+2022-06-29 18:17:26,268 - 127.0.0.1 - - [29/Jun/2022 18:17:26] "GET /traductor?palabra=$hola HTTP/1.1" 200 -
+2022-06-29 18:18:01,413 -  * Running on http://localhost:5000 (Press CTRL+C to quit)
+2022-06-29 18:18:10,007 - Palabra:hola
+2022-06-29 18:18:10,008 - Exception on /traductor [GET]
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Dell\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 1526, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Dell\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 1545, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Dell\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 1734, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a Translated.
+2022-06-29 18:18:10,011 - 127.0.0.1 - - [29/Jun/2022 18:18:10] "[35m[1mGET /traductor?palabra=$hola HTTP/1.1[0m" 500 -
+2022-06-29 18:21:05,159 -  * Running on http://localhost:5000 (Press CTRL+C to quit)
+2022-06-29 18:21:14,530 - Palabra:hola
+2022-06-29 18:21:14,530 - Exception on /traductor [GET]
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Dell\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 1526, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Dell\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 1545, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Dell\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 1734, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a Translated.
+2022-06-29 18:21:14,533 - 127.0.0.1 - - [29/Jun/2022 18:21:14] "[35m[1mGET /traductor?palabra=$hola HTTP/1.1[0m" 500 -
+2022-06-29 18:23:19,437 -  * Running on http://localhost:5000 (Press CTRL+C to quit)
+2022-06-29 18:23:35,381 - Palabra:hola
+2022-06-29 18:23:35,381 - Exception on /traductor [GET]
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Dell\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 1526, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Dell\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 1545, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Dell\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 1734, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a Translated.
+2022-06-29 18:23:35,383 - 127.0.0.1 - - [29/Jun/2022 18:23:35] "[35m[1mGET /traductor?palabra=$hola HTTP/1.1[0m" 500 -
+2022-06-29 18:25:13,021 -  * Running on http://localhost:5000 (Press CTRL+C to quit)
+2022-06-29 18:25:21,570 - Palabra:hola
+2022-06-29 18:25:21,573 - 127.0.0.1 - - [29/Jun/2022 18:25:21] "GET /traductor?palabra=$hola HTTP/1.1" 200 -
+2022-06-29 18:26:28,642 -  * Running on http://localhost:5000 (Press CTRL+C to quit)
+2022-06-29 18:26:37,717 - Palabra:hola mundo
+2022-06-29 18:26:37,721 - 127.0.0.1 - - [29/Jun/2022 18:26:37] "GET /traductor?palabra=$hola%20mundo HTTP/1.1" 200 -
+2022-06-29 18:26:57,649 - Palabra:hola mundo
+2022-06-29 18:26:57,652 - 127.0.0.1 - - [29/Jun/2022 18:26:57] "GET /traductor?palabra=$hola%20mundo HTTP/1.1" 200 -
+2022-06-29 18:27:16,353 -  * Running on http://localhost:5000 (Press CTRL+C to quit)
+2022-06-29 18:27:36,723 - Palabra:hola
+2022-06-29 18:27:36,727 - 127.0.0.1 - - [29/Jun/2022 18:27:36] "GET /traductor?palabra=$hola HTTP/1.1" 200 -
+2022-06-29 18:28:04,117 -  * Running on http://localhost:5000 (Press CTRL+C to quit)
+2022-06-29 18:28:09,906 - Palabra:hola
+2022-06-29 18:28:09,910 - 127.0.0.1 - - [29/Jun/2022 18:28:09] "GET /traductor?palabra=$hola HTTP/1.1" 200 -
+2022-06-29 18:28:40,958 -  * Running on http://localhost:5000 (Press CTRL+C to quit)
+2022-06-29 18:28:48,616 - Palabra:hola
+2022-06-29 18:28:48,620 - 127.0.0.1 - - [29/Jun/2022 18:28:48] "GET /traductor?palabra=$hola HTTP/1.1" 200 -
+2022-06-29 18:29:20,280 -  * Running on http://localhost:5000 (Press CTRL+C to quit)
+2022-06-29 18:29:27,393 - Palabra:hola
+2022-06-29 18:29:27,395 - 127.0.0.1 - - [29/Jun/2022 18:29:27] "GET /traductor?palabra=$hola HTTP/1.1" 200 -
+2022-06-29 18:29:49,022 -  * Running on http://localhost:5000 (Press CTRL+C to quit)
+2022-06-29 18:29:56,064 - Palabra:hola
+2022-06-29 18:29:56,067 - 127.0.0.1 - - [29/Jun/2022 18:29:56] "GET /traductor?palabra=$hola HTTP/1.1" 200 -
+2022-06-29 18:30:36,426 -  * Running on http://localhost:5000 (Press CTRL+C to quit)
+2022-06-29 18:30:42,684 - Palabra:hola
+2022-06-29 18:30:42,686 - 127.0.0.1 - - [29/Jun/2022 18:30:42] "GET /traductor?palabra=$hola HTTP/1.1" 200 -
+2022-06-29 18:32:19,884 -  * Running on http://localhost:5000 (Press CTRL+C to quit)
+2022-06-29 18:32:31,699 - Palabra:hola
+2022-06-29 18:32:31,702 - 127.0.0.1 - - [29/Jun/2022 18:32:31] "GET /traductor?palabra=$hola HTTP/1.1" 200 -
+2022-06-29 18:33:13,146 -  * Running on http://localhost:5000 (Press CTRL+C to quit)
+2022-06-29 18:33:22,816 - Palabra:hola
+2022-06-29 18:33:22,819 - 127.0.0.1 - - [29/Jun/2022 18:33:22] "GET /traductor?palabra=$hola HTTP/1.1" 200 -
+2022-06-29 18:34:22,263 -  * Running on http://localhost:5000 (Press CTRL+C to quit)
+2022-06-29 18:34:29,742 - Palabra:hola
+2022-06-29 18:34:29,746 - 127.0.0.1 - - [29/Jun/2022 18:34:29] "GET /traductor?palabra=$hola HTTP/1.1" 200 -
+2022-06-29 18:37:23,106 -  * Running on http://localhost:5000 (Press CTRL+C to quit)
+2022-06-29 18:37:26,927 - Palabra:hola
+2022-06-29 18:37:26,927 - 127.0.0.1 - - [29/Jun/2022 18:37:26] "GET /traductor?palabra=$hola HTTP/1.1" 200 -
+2022-06-29 18:37:48,635 -  * Running on http://localhost:5000 (Press CTRL+C to quit)
+2022-06-29 18:37:56,473 - Palabra:hola
+2022-06-29 18:37:56,480 - 127.0.0.1 - - [29/Jun/2022 18:37:56] "GET /traductor?palabra=$hola HTTP/1.1" 200 -
+2022-06-29 18:38:53,262 -  * Running on http://localhost:5000 (Press CTRL+C to quit)
+2022-06-29 18:39:00,532 - Palabra:hola
+2022-06-29 18:39:00,544 - 127.0.0.1 - - [29/Jun/2022 18:39:00] "GET /traductor?palabra=$hola HTTP/1.1" 200 -
+2022-06-29 18:39:37,483 -  * Running on http://localhost:5000 (Press CTRL+C to quit)
+2022-06-29 18:39:48,164 - Palabra:hola
+2022-06-29 18:39:48,171 - 127.0.0.1 - - [29/Jun/2022 18:39:48] "GET /traductor?palabra=$hola HTTP/1.1" 200 -
+2022-06-29 18:40:25,457 -  * Running on http://localhost:5000 (Press CTRL+C to quit)
+2022-06-29 18:40:33,372 - Palabra:mundo
+2022-06-29 18:40:33,377 - 127.0.0.1 - - [29/Jun/2022 18:40:33] "GET /traductor?palabra=$mundo HTTP/1.1" 200 -
+2022-06-29 18:56:11,934 -  * Running on http://localhost:5000 (Press CTRL+C to quit)
+2022-06-29 18:56:29,483 - Palabra:mundo
+2022-06-29 18:56:29,489 - 127.0.0.1 - - [29/Jun/2022 18:56:29] "GET /traductor?palabra=$mundo HTTP/1.1" 200 -
+2022-06-29 18:56:49,927 -  * Running on http://localhost:5000 (Press CTRL+C to quit)
+2022-06-29 18:56:59,444 - Palabra:hola
+2022-06-29 18:56:59,445 - 127.0.0.1 - - [29/Jun/2022 18:56:59] "GET /traductor?palabra=$hola HTTP/1.1" 200 -
+2022-06-29 18:57:13,926 -  * Running on http://localhost:5000 (Press CTRL+C to quit)
+2022-06-29 18:57:21,562 - Palabra:mundo
+2022-06-29 18:57:21,570 - 127.0.0.1 - - [29/Jun/2022 18:57:21] "GET /traductor?palabra=$mundo HTTP/1.1" 200 -
+2022-06-29 18:57:39,658 -  * Running on http://localhost:5000 (Press CTRL+C to quit)
+2022-06-29 18:57:51,473 - Palabra:hola
+2022-06-29 18:57:51,485 - 127.0.0.1 - - [29/Jun/2022 18:57:51] "GET /traductor?palabra=$hola HTTP/1.1" 200 -
+2022-06-29 18:58:14,043 -  * Running on http://localhost:5000 (Press CTRL+C to quit)
+2022-06-29 18:58:20,694 - Palabra:mundo
+2022-06-29 18:58:20,696 - 127.0.0.1 - - [29/Jun/2022 18:58:20] "GET /traductor?palabra=$mundo HTTP/1.1" 200 -
+2022-06-29 18:58:32,812 -  * Running on http://localhost:5000 (Press CTRL+C to quit)
+2022-06-29 18:58:44,194 - Palabra:hola
+2022-06-29 18:58:44,196 - 127.0.0.1 - - [29/Jun/2022 18:58:44] "GET /traductor?palabra=$hola HTTP/1.1" 200 -
+2022-06-29 18:59:09,427 -  * Running on http://localhost:5000 (Press CTRL+C to quit)
+2022-06-29 18:59:19,513 - Palabra:hola mundo
+2022-06-29 18:59:19,518 - 127.0.0.1 - - [29/Jun/2022 18:59:19] "GET /traductor?palabra=$hola%20mundo HTTP/1.1" 200 -
+2022-06-29 18:59:49,013 -  * Running on http://localhost:5000 (Press CTRL+C to quit)
+2022-06-29 19:00:04,043 - Palabra:hola mundo, como estan
+2022-06-29 19:00:04,049 - 127.0.0.1 - - [29/Jun/2022 19:00:04] "GET /traductor?palabra=$hola%20mundo,%20como%20estan HTTP/1.1" 200 -
+2022-06-29 19:05:57,862 -  * Running on http://localhost:5000 (Press CTRL+C to quit)
+2022-06-29 19:06:03,195 - Palabra:hola
+2022-06-29 19:06:03,198 - 127.0.0.1 - - [29/Jun/2022 19:06:03] "GET /traductor?palabra=$hola HTTP/1.1" 200 -
+2022-06-29 19:06:17,201 - Palabra:fr-hola
+2022-06-29 19:06:17,203 - 127.0.0.1 - - [29/Jun/2022 19:06:17] "GET /traductor?palabra=$fr-hola HTTP/1.1" 200 -
+2022-06-29 19:07:12,520 -  * Running on http://localhost:5000 (Press CTRL+C to quit)
+2022-06-29 19:07:34,273 - Palabra:fr-hola mundo
+2022-06-29 19:07:34,273 - 127.0.0.1 - - [29/Jun/2022 19:07:34] "GET /traductor?palabra=$fr-hola%20mundo HTTP/1.1" 200 -
+2022-06-29 19:07:49,992 -  * Running on http://localhost:5000 (Press CTRL+C to quit)
+2022-06-29 19:08:01,863 - Palabra:fr-hola mundo
+2022-06-29 19:08:01,863 - 127.0.0.1 - - [29/Jun/2022 19:08:01] "GET /traductor?palabra=$fr-hola%20mundo HTTP/1.1" 200 -
+2022-06-29 19:08:46,401 -  * Running on http://localhost:5000 (Press CTRL+C to quit)
+2022-06-29 19:08:59,553 - Palabra:fr-soy guapo
+2022-06-29 19:08:59,553 - 127.0.0.1 - - [29/Jun/2022 19:08:59] "GET /traductor?palabra=$fr-soy%20guapo HTTP/1.1" 200 -
+2022-06-29 19:09:15,263 - Palabra:en-hola mundo
+2022-06-29 19:09:15,263 - 127.0.0.1 - - [29/Jun/2022 19:09:15] "GET /traductor?palabra=$en-hola%20mundo HTTP/1.1" 200 -
+2022-06-29 19:10:44,003 - Palabra:en-norman es gay
+2022-06-29 19:10:44,003 - 127.0.0.1 - - [29/Jun/2022 19:10:44] "GET /traductor?palabra=$en-norman%20es%20gay HTTP/1.1" 200 -
+2022-06-29 19:12:02,560 - Palabra:ja-hola mundo
+2022-06-29 19:12:02,560 - 127.0.0.1 - - [29/Jun/2022 19:12:02] "GET /traductor?palabra=$ja-hola%20mundo HTTP/1.1" 200 -
+2022-06-29 19:12:22,003 - Palabra:pt-hola mundo
+2022-06-29 19:12:22,013 - 127.0.0.1 - - [29/Jun/2022 19:12:22] "GET /traductor?palabra=$pt-hola%20mundo HTTP/1.1" 200 -
+2022-06-29 19:12:51,983 - Palabra:it-hola mundo
+2022-06-29 19:12:51,983 - 127.0.0.1 - - [29/Jun/2022 19:12:51] "GET /traductor?palabra=$it-hola%20mundo HTTP/1.1" 200 -

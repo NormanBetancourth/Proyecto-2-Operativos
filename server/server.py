@@ -1,15 +1,18 @@
 from flask import Flask
 from flask import request
 from threading import  Lock
+from googletrans import Translator
 import logging 
 
-traducciones = {
-    'carro':'car',
-    'casa':'house',
-    'caballo':'horse',
-    'silla':'chair',
-    'libro':'book',
-    }
+# traducciones = {
+#     'carro':'car',
+#     'casa':'house',
+#     'caballo':'horse',
+#     'silla':'chair',
+#     'libro':'book',
+#     }
+
+translator = Translator()
 
 mutex = Lock()
 logging.basicConfig(filename='file.log', format='%(asctime)s - %(message)s', level=logging.INFO)
@@ -26,9 +29,13 @@ app = Flask(__name__)
 def get():
     result = 'not found'
     try:
-      result = traducciones[request.args.get('palabra')[1:]]
+      textoParse = request.args.get('palabra')[1:]
+      codigoTrasl = textoParse[0:2]
+      text = textoParse[3:]
+      textoSalida = translator.translate(text, dest=codigoTrasl); 
+      result =textoSalida.text
     except:
-      result = 'not found'
+      result = 'not foundd'
 
     mutex.acquire()
     saveLog(request.headers, request.args.get('palabra')[1:])
