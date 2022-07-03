@@ -25,7 +25,7 @@ es = Spanish <br />
 etc...
 
 ## Uso
-1) Correr la imagen que se descargo para activar el servidor que ofrecera el servicio de traducciones (servidor)
+1) Correr la imagen que se descargo para activar el servidor que ofrecera el servicio de traducciones con el comando: <br /> docker run -p 5000:5000 htrmf/firstimage
 2) Correr el archivo `client/main.py`    (cliente)
 3) Una vez teniendo el archivo main.py corriendo, usted como cliente debe de insertar una frase o palabra para que realice la traduccion al idioma
 que se selecciono
