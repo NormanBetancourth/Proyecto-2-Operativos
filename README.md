@@ -30,7 +30,7 @@ etc...
 3) Una vez teniendo el archivo main.py corriendo, usted como cliente debe de insertar una frase o palabra para que realice la traduccion al idioma
 que se selecciono
 4) El formato del mensaje que se le debe de enviar al servidor desde el cliente para realizar la traduccion es 'codIdioma-frase'
-ejm: 
-'fr-Hola Mundo!'  (Se recibira como respuesta 'Salut Monde!')
-'en-Hola Mundo!'  (Se recibira como respuesta 'Hello world!')
+ejm:  <br />
+'fr-Hola Mundo!'  (Se recibira como respuesta 'Salut Monde!') <br />
+'en-Hola Mundo!'  (Se recibira como respuesta 'Hello world!') <br />
 'ja-Hola Mundo!'  (Se recibira como respuesta '「こんにちは世界」')
