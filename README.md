@@ -6,12 +6,15 @@ Tarea Programada #2 EIF212 – Sistemas Operativos
 -> Hector Mendez <br />
 
 ## Instalación
-Se deben de correr los comandos  `pip install -r requirements.txt` y  `pip install googletrans==4.0.0rc1` y 
-se instalaran las dependencias necesarias para el correcto funcionamiento de este
+Lo primero que se tiene que realizar es descargar la imagen de docker que se encuentra en el siguiente 
+link: <a> https://hub.docker.com/repository/docker/htrmf/firstimage </a>
+Esta imagen proveera la aplicacion que correra del lado del servidor
+
+Lo segundo descargar este repositorio de git, mas especificamente la carpeta de client que posee el archivo main.py que correra del lado del cliente
 
 ##Descripcion
-El programa se basa en una arquitectura cliente servidor que permitira mutiples conexiones de clientes simultaneamente
-El servidor proveera un servicio el cual sera en este caso la traduccion de frases en español a casi cualquier idioma dependiendo del 
+El programa se basa en una arquitectura cliente servidor que permitira mutiples conexiones de clientes simultaneamente.
+El servidor proveera un servicio el cual sera en este caso la traduccion de palabras y frases en español a casi cualquier idioma dependiendo del 
 codigo que se ingrese
 en = english
 fr= french
@@ -20,11 +23,14 @@ ja = japanese
 pt = Portuguese
 es = Spanish
 etc...
+
 ## Uso
-1) Correr el archivo `server/server.py` (servidor)
+1) Correr la imagen que se descargo para activar el servidor que ofrecera el servicio de traducciones (servidor)
 2) Correr el archivo `client/main.py`    (cliente)
-3) El cliente le solicitará una palabra para traducir, usted la introduce ** 
+3) Una vez teniendo el archivo main.py corriendo, usted como cliente debe de insertar una frase o palabra para que realice la traduccion al idioma
+que se selecciono
 4) El formato del mensaje que se le debe de enviar al servidor desde el cliente para realizar la traduccion es 'codIdioma-frase'
 ejm: 
-'fr-Hola Mundo!'  (Se recibira como respuesta 'salut monde!')
+'fr-Hola Mundo!'  (Se recibira como respuesta 'Salut Monde!')
 'en-Hola Mundo!'  (Se recibira como respuesta 'Hello world!')
+'ja-Hola Mundo!'  (Se recibira como respuesta '「こんにちは世界」')
