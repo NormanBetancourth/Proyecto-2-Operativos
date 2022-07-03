@@ -15,13 +15,13 @@ Lo segundo descargar este repositorio de git, mas especificamente la carpeta de 
 ##Descripcion
 El programa se basa en una arquitectura cliente servidor que permitira mutiples conexiones de clientes simultaneamente.
 El servidor proveera un servicio el cual sera en este caso la traduccion de palabras y frases en español a casi cualquier idioma dependiendo del 
-codigo que se ingrese
-en = english
-fr= french
-it = italian
-ja = japanese
-pt = Portuguese
-es = Spanish
+codigo que se ingrese <br />
+en = english <br />
+fr= french <br />
+it = italian <br />
+ja = japanese <br />
+pt = Portuguese <br />
+es = Spanish <br />
 etc...
 
 ## Uso
