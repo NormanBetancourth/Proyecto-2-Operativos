@@ -1,18 +1,18 @@
-# Proyecto-2-Operativos
+# Proyecto-2-Operativos 
 Tarea Programada #2 EIF212 – Sistemas Operativos
-### Integrantes: 
+### Integrantes: <br />
 -> Norman Betancourtt  <br />
 -> Rebeca Servellon <br />
 -> Hector Mendez <br />
 
-## Instalación
+## Instalación <br />
 Lo primero que se tiene que realizar es descargar la imagen de docker que se encuentra en el siguiente 
 link: <a> https://hub.docker.com/repository/docker/htrmf/firstimage </a>
 Esta imagen proveera la aplicacion que correra del lado del servidor
 
 Lo segundo descargar este repositorio de git, mas especificamente la carpeta de client que posee el archivo main.py que correra del lado del cliente
 
-##Descripcion
+##Descripcion <br />
 El programa se basa en una arquitectura cliente servidor que permitira mutiples conexiones de clientes simultaneamente.
 El servidor proveera un servicio el cual sera en este caso la traduccion de palabras y frases en español a casi cualquier idioma dependiendo del 
 codigo que se ingrese <br />
@@ -24,7 +24,7 @@ pt = Portuguese <br />
 es = Spanish <br />
 etc...
 
-## Uso
+## Uso <br />
 1) Correr la imagen que se descargo para activar el servidor que ofrecera el servicio de traducciones con el comando: <br /> `docker run -p 5000:5000 htrmf/firstimage`
 2) Correr en consola el archivo `client/main.py`    (cliente)
 3) Una vez teniendo el archivo main.py corriendo, usted como cliente debe de insertar una frase o palabra para que realice la traduccion al idioma
